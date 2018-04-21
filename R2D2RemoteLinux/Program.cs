@@ -11,7 +11,7 @@ namespace R2D2RemoteLinux
         
         public static void Main(string[] args)
         {
-            R2D2RemoteLinux r2d2 = R2D2RemoteLinux();
+            R2D2RemoteLinux r2d2 = new R2D2RemoteLinux();
             r2d2.Start();
         }
 
