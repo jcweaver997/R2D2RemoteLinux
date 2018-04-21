@@ -1,0 +1,16 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "R2D2RemoteLinux", "R2D2RemoteLinux\R2D2RemoteLinux.csproj", "{DC18C69F-E8AB-4097-BA34-FCD60A09C3EE}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{DC18C69F-E8AB-4097-BA34-FCD60A09C3EE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DC18C69F-E8AB-4097-BA34-FCD60A09C3EE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DC18C69F-E8AB-4097-BA34-FCD60A09C3EE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DC18C69F-E8AB-4097-BA34-FCD60A09C3EE}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
