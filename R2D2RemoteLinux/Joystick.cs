@@ -29,7 +29,7 @@ namespace R2D2RemoteLinux
             {
                 if (filename.Contains("js"))
                 {
-                    Console.WriteLine(filename.Substring(11));
+                    Console.WriteLine(filename);
                 }
             }
         }
