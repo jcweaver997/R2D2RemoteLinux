@@ -51,7 +51,8 @@ namespace R2D2RemoteLinux
 
         private void Loop()
         {
-            float[] tankVals = TranslateValuesFromGTAToTank(joy.GetThumbstickLeft().Y, joy.GetThumbstickRight().X);
+            float[] tankVals = TranslateValuesFromGTAToTank(-joy.GetThumbstickLeft().Y, joy.GetThumbstickRight().X);
+            //Console.WriteLine(tankVals[0]+", "+tankVals[1]);
             con.SendCommand(new R2D2Connection.Command(R2D2Connection.Commands.SetLeftDriveMotor,
                 BitConverter.GetBytes(tankVals[0])));
             con.SendCommand(new R2D2Connection.Command(R2D2Connection.Commands.SetRightDriveMotor,
@@ -62,17 +63,17 @@ namespace R2D2RemoteLinux
         private float[] TranslateValuesFromGTAToTank(float throttle, float turn)
         {
             float[] ar = new float[2];
-            if (throttle>.05f)
+            /*if (throttle>.05f)
             {
                 ar[0] = throttle;
                 ar[1] = throttle;
                 if (turn>0)
                 {
-                    ar[1] -= turn * .3f;
+                    ar[1] -= turn * .7f;
                 }
                 else
                 {
-                    ar[0] -= turn * .3f;
+                    ar[0] -= turn * .7f;
                 }
 
             }
@@ -82,11 +83,11 @@ namespace R2D2RemoteLinux
                 ar[1] = throttle;
                 if (turn > 0)
                 {
-                    ar[1] += turn * .3f;
+                    ar[0] += turn * .7f;
                 }
                 else
                 {
-                    ar[0] += turn * .3f;
+                    ar[1] += turn * .7f;
                 }
 
             }
@@ -94,12 +95,33 @@ namespace R2D2RemoteLinux
             {
                 ar[0] = throttle;
                 ar[1] = throttle;
-                ar[0] += turn * .5f;
-                ar[1] -= turn * .5f;
-            }
+                ar[0] += turn * .7f;
+                ar[1] -= turn * .7f;
+            }*/
+            ar[0] = throttle;
+            ar[1] = throttle;
+            ar[0] += turn * .7f;
+            ar[1] -= turn * .7f;
+            ar[0] = minmax(ar[0], -1, 1);
+            ar[1] = minmax(ar[1], -1, 1);
             return ar;
         }
-        
+
+        private float minmax(float num, float min, float max)
+        {
+            if (num>max)
+            {
+                return max;
+            }else if (num<min)
+            {
+                return min;
+            }
+            else
+            {
+                return num;
+            }
+            
+        }
         
         
         

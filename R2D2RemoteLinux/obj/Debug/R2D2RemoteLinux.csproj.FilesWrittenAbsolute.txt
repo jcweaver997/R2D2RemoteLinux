@@ -3,3 +3,8 @@
 /home/jc/RiderProjects/R2D2RemoteLinux/R2D2RemoteLinux/bin/Debug/R2D2RemoteLinux.exe
 /home/jc/RiderProjects/R2D2RemoteLinux/R2D2RemoteLinux/obj/Debug/R2D2RemoteLinux.exe
 /home/jc/RiderProjects/R2D2RemoteLinux/R2D2RemoteLinux/obj/Debug/R2D2RemoteLinux.exe.mdb
+/home/robotics/RiderProjects/R2D2RemoteLinux/R2D2RemoteLinux/obj/Debug/.NETFramework,Version=v4.6.1.AssemblyAttribute.cs
+/home/robotics/RiderProjects/R2D2RemoteLinux/R2D2RemoteLinux/bin/Debug/R2D2RemoteLinux.exe.mdb
+/home/robotics/RiderProjects/R2D2RemoteLinux/R2D2RemoteLinux/bin/Debug/R2D2RemoteLinux.exe
+/home/robotics/RiderProjects/R2D2RemoteLinux/R2D2RemoteLinux/obj/Debug/R2D2RemoteLinux.exe
+/home/robotics/RiderProjects/R2D2RemoteLinux/R2D2RemoteLinux/obj/Debug/R2D2RemoteLinux.exe.mdb
