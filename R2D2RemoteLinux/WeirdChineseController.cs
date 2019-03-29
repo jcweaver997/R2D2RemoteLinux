@@ -8,12 +8,6 @@ namespace R2D2RemoteLinux
     {
         public WeirdChineseController(string devfile) : base(devfile)
         {
-            while (!Axis.ContainsKey(0)) Thread.Sleep(10);
-            while (!Axis.ContainsKey(1)) Thread.Sleep(10);
-            while (!Axis.ContainsKey(3)) Thread.Sleep(10);
-            while (!Axis.ContainsKey(4)) Thread.Sleep(10);
-            while (!Axis.ContainsKey(5)) Thread.Sleep(10);
-            while (!Axis.ContainsKey(6)) Thread.Sleep(10);
 
             for (byte i = 0; i <= 9; i++){
                 while (!Button.ContainsKey(i)) Thread.Sleep(10);
